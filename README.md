@@ -1,7 +1,9 @@
 # Music-Sharing-Portal
-It is  website built using Django.
+
+#### It is  website built using Django.
 
 ## The following conditions is applied on this website.
+
 ### Project Details:
 
 * Create a website that allows users to upload music and share it with each other.
