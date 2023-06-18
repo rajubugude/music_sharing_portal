@@ -1,0 +1,1 @@
+web: gunicorn music_sharing_portal.wsgi --log-file--
