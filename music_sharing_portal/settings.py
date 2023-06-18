@@ -76,23 +76,23 @@ WSGI_APPLICATION = 'music_sharing_portal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'H3CQPBGp0SAopMVha20j',
-        'HOST':'containers-us-west-79.railway.app',
-        'PORT':'5469',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'H3CQPBGp0SAopMVha20j',
+#         'HOST':'containers-us-west-79.railway.app',
+#         'PORT':'5469',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -141,12 +141,11 @@ EMAIL_HOST_PASSWORD = 'gmnkhmsabuqjwtze'
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR,'static')
-# ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
+
 
 MEDIA_URL ='/media/'
 MEDIA_ROOT =os.path.join(BASE_DIR,"media")
