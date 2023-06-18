@@ -9,4 +9,3 @@ urlpatterns = [
     path('',include("music_app.urls")),
     path('auth/', include("authentication_app.urls"))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
